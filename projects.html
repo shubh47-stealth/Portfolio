@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Shubham Saha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <span class="wordmark">Shubham Saha</span>
+
+      <nav class="primary-nav" aria-label="Primary">
+        <ul class="primary-nav__list">
+          <li><a class="primary-nav__link" href="index.html">Home</a></li>
+          <li><a class="primary-nav__link" href="about.html">About</a></li>
+          <li><a class="primary-nav__link" href="skills.html">Skills</a></li>
+          <li><a class="primary-nav__link is-active" href="projects.html" aria-current="page">Projects</a></li>
+          <li><a class="primary-nav__link" href="services.html">Services</a></li>
+          <li><a class="primary-nav__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn--primary btn--compact header-cta" href="/contact">Get in Touch</a>
+
+      <button class="header-mobile-toggle" type="button" aria-label="Open menu">
+        <span class="header-mobile-toggle__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Projects intro -->
+    <section class="page-intro">
+      <div class="container">
+        <p class="page-intro__label">Projects</p>
+        <h1 class="page-intro__heading">Things I&#8217;ve built.</h1>
+        <p class="page-intro__copy">
+          A collection of small projects I&#8217;ve created while learning,
+          experimenting, and strengthening my development skills.
+        </p>
+      </div>
+    </section>
+
+    <!-- Project list -->
+    <section>
+      <div class="container">
+        <div class="projects-list">
+
+          <!-- Project 01 — Booklist -->
+          <article class="project-item">
+            <span class="project-item__number">01</span>
+            <div class="project-item__grid">
+              <div class="project-item__media">
+                <div class="project-image-frame">
+                  <div class="project-image-placeholder">
+                    <span class="project-image-placeholder-icon" aria-hidden="true"></span>
+                    <span class="project-image-placeholder-text">Booklist preview</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-item__content">
+                <h2 class="project-item__title">Booklist</h2>
+                <p class="project-item__description">
+                  A simple book management web application where users can
+                  add and remove books, with the book data stored in the
+                  browser using localStorage.
+                </p>
+                <p class="project-item__tech">HTML · CSS · Vanilla JavaScript · localStorage</p>
+                <div class="project-item__links">
+                  <a class="project-link" href="#">
+                    View Project <span class="project-link__arrow">→</span>
+                  </a>
+                  <a class="project-link" href="https://github.com/shubh47-stealth/BookList.git">
+                    Source Code <span class="project-link__arrow">→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 02 — Music Player -->
+          <article class="project-item project-item--reverse">
+            <span class="project-item__number">02</span>
+            <div class="project-item__grid">
+              <div class="project-item__media">
+                <div class="project-image-frame">
+                  <div class="project-image-placeholder">
+                    <span class="project-image-placeholder-icon" aria-hidden="true"></span>
+                    <span class="project-image-placeholder-text">Music Player preview</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-item__content">
+                <h2 class="project-item__title">Music Player</h2>
+                <p class="project-item__description">
+                  A simple music player that allows users to play pre-stored
+                  songs and skip between tracks.
+                </p>
+                <p class="project-item__tech">HTML · CSS · Vanilla JavaScript</p>
+                <div class="project-item__links">
+                  <a class="project-link" href="#">
+                    View Project <span class="project-link__arrow">→</span>
+                  </a>
+                  <a class="project-link" href="https://github.com/shubh47-stealth/Music-PLayer.git">
+                    Source Code <span class="project-link__arrow">→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="projects-more">
+          <p class="projects-more__text">More projects coming soon.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <span class="site-footer__brand">Shubham Saha</span>
+      <p class="site-footer__copy">© 2026 Shubham Saha. All Rights Reserved.</p>
+      <div class="site-footer__links">
+        <a href="https://www.linkedin.com/in/watashi-shubhamsaha" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/shubh47-stealth" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

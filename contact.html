@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Shubham Saha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <span class="wordmark">Shubham Saha</span>
+
+      <nav class="primary-nav" aria-label="Primary">
+        <ul class="primary-nav__list">
+          <li><a class="primary-nav__link" href="index.html">Home</a></li>
+          <li><a class="primary-nav__link" href="about.html">About</a></li>
+          <li><a class="primary-nav__link" href="skills.html">Skills</a></li>
+          <li><a class="primary-nav__link" href="projects.html">Projects</a></li>
+          <li><a class="primary-nav__link" href="services.html">Services</a></li>
+          <li><a class="primary-nav__link is-active" href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn--primary btn--compact header-cta" href="/contact">Get in Touch</a>
+
+      <button class="header-mobile-toggle" type="button" aria-label="Open menu">
+        <span class="header-mobile-toggle__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Contact intro -->
+    <section class="page-intro">
+      <div class="container">
+        <p class="page-intro__label">Contact</p>
+        <h1 class="page-intro__heading">Let&#8217;s talk.</h1>
+        <p class="page-intro__copy">
+          Have a question, an opportunity, or just want to connect? Feel
+          free to reach out.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact details + form -->
+    <section class="section">
+      <div class="container contact-grid">
+
+        <!-- Left: direct contact info -->
+        <div>
+          <p class="section__label">Get in Touch</p>
+          <h2 class="contact-info__heading">Reach me directly.</h2>
+
+          <div class="contact-rows">
+            <div class="contact-row">
+              <p class="contact-row__label">Email</p>
+              <a class="contact-row__value" href="mailto:luckysaha9907@gmail.com">
+                luckysaha9907@gmail.com
+              </a>
+            </div>
+            <div class="contact-row">
+              <p class="contact-row__label">LinkedIn</p>
+              <a
+                class="contact-row__value"
+                href="https://www.linkedin.com/in/watashi-shubhamsaha"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                linkedin.com/in/watashi-shubhamsaha
+              </a>
+            </div>
+            <div class="contact-row">
+              <p class="contact-row__label">GitHub</p>
+              <a
+                class="contact-row__value"
+                href="https://github.com/shubh47-stealth"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                github.com/shubh47-stealth
+              </a>
+            </div>
+          </div>
+
+          <!-- <div class="contact-social">
+            <a
+              class="contact-social-link"
+              href="https://www.linkedin.com/in/watashi-shubhamsaha"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn <span class="contact-social-link__arrow">↗</span>
+            </a>
+            <a
+              class="contact-social-link"
+              href="https://github.com/shubh47-stealth"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub <span class="contact-social-link__arrow">↗</span>
+            </a>
+          </div> -->
+        </div>
+
+        <!-- Right: contact form -->
+        <div>
+          <p class="section__label">Send a Message</p>
+          <h2 class="contact-form-heading">Tell me a bit about it.</h2>
+
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-field">
+              <label class="form-field__label" for="name">Name</label>
+              <input
+                class="form-field__input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                autocomplete="name"
+                required
+              />
+              <p class="form-field__error" id="name-error" role="alert" hidden>
+                Please enter your name.
+              </p>
+            </div>
+
+            <div class="form-field">
+              <label class="form-field__label" for="email">Email</label>
+              <input
+                class="form-field__input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your email"
+                autocomplete="email"
+                required
+              />
+              <p class="form-field__error" id="email-error" role="alert" hidden>
+                Please enter a valid email address.
+              </p>
+            </div>
+
+            <div class="form-field">
+              <label class="form-field__label" for="message">Message</label>
+              <textarea
+                class="form-field__textarea"
+                id="message"
+                name="message"
+                placeholder="Tell me a little about what you'd like to discuss."
+                required
+              ></textarea>
+              <p class="form-field__error" id="message-error" role="alert" hidden>
+                Please enter a message.
+              </p>
+            </div>
+
+            <button class="btn btn--primary contact-form__submit" type="submit">
+              Send Message →
+            </button>
+
+            <p class="contact-form__success" id="form-success" hidden>
+              Thanks — your message has been received.
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <span class="site-footer__brand">Shubham Saha</span>
+      <p class="site-footer__copy">© 2026 Shubham Saha. All Rights Reserved.</p>
+      <div class="site-footer__links">
+        <a href="https://www.linkedin.com/in/watashi-shubhamsaha" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/shubh47-stealth" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    // Static-preview version of the EmailJS integration.
+    // The Next.js version (Contact.jsx) does the same thing
+    // through React state instead of direct DOM manipulation.
+    (function () {
+      var EMAILJS_SERVICE_ID = "service_sd0pbhh";
+      var EMAILJS_TEMPLATE_ID = "template_jgkpsln";
+      var EMAILJS_PUBLIC_KEY = "OoWsJuN_BL4sL2scc";
+
+      emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+
+      var form = document.getElementById("contact-form");
+      var nameInput = document.getElementById("name");
+      var emailInput = document.getElementById("email");
+      var messageInput = document.getElementById("message");
+      var successEl = document.getElementById("form-success");
+      var submitBtn = form.querySelector(".contact-form__submit");
+
+      var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      function setFieldState(input, errorId, isValid) {
+        var errorEl = document.getElementById(errorId);
+        if (isValid) {
+          input.removeAttribute("aria-invalid");
+          errorEl.hidden = true;
+        } else {
+          input.setAttribute("aria-invalid", "true");
+          errorEl.hidden = false;
+        }
+      }
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        var isNameValid = nameInput.value.trim().length > 0;
+        var isEmailValid = emailPattern.test(emailInput.value.trim());
+        var isMessageValid = messageInput.value.trim().length > 0;
+
+        setFieldState(nameInput, "name-error", isNameValid);
+        setFieldState(emailInput, "email-error", isEmailValid);
+        setFieldState(messageInput, "message-error", isMessageValid);
+
+        successEl.hidden = true;
+
+        if (!(isNameValid && isEmailValid && isMessageValid)) {
+          return;
+        }
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending…";
+
+        emailjs
+          .send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+            from_name: nameInput.value,
+            from_email: emailInput.value,
+            message: messageInput.value,
+          })
+          .then(function () {
+            successEl.hidden = false;
+            form.reset();
+          })
+          .catch(function () {
+            alert(
+              "Something went wrong sending your message. Please try again or email me directly."
+            );
+          })
+          .finally(function () {
+            submitBtn.disabled = false;
+            submitBtn.textContent = "Send Message →";
+          });
+      });
+    })();
+  </script>
+</body>
+</html>
