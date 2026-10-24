@@ -24,27 +24,27 @@ const NAV_LINKS = [
 const SERVICE_ITEMS = [
   {
     number: "01",
-    name: "Responsive Interfaces",
+    name: "Component-Based Interfaces",
     description:
-      "Creating layouts that adapt naturally across desktop, tablet, and mobile screen sizes.",
+      "Building reusable, component-based user interfaces with React, structured for clarity and easy maintenance.",
   },
   {
     number: "02",
-    name: "Interactive Experiences",
+    name: "State Management",
     description:
-      "Adding client-side interactions and dynamic behavior to make interfaces feel responsive and intuitive.",
+      "Managing application state predictably across components using Redux, so interfaces stay consistent as they grow.",
   },
   {
     number: "03",
-    name: "Clean Web Structure",
+    name: "Responsive Styling",
     description:
-      "Building well-organized frontend markup and styling with attention to readability and maintainability.",
+      "Creating layouts that adapt naturally across desktop, tablet, and mobile screen sizes using Tailwind CSS.",
   },
   {
     number: "04",
-    name: "Browser Functionality",
+    name: "Backend Integration",
     description:
-      "Working with browser-side features such as local storage and other frontend functionality when required.",
+      "Connecting frontend applications to backend services such as Appwrite and FastAPI for authentication, data storage, and APIs.",
   },
 ];
 
@@ -97,9 +97,9 @@ function ServicesIntro() {
         <p className="page-intro__label">Services</p>
         <h1 className="page-intro__heading">What I can help build.</h1>
         <p className="page-intro__copy">
-          I currently focus on frontend development, creating clean,
-          responsive, and interactive web experiences with a strong emphasis
-          on structure, usability, and visual clarity.
+          I currently focus on frontend development with React, creating
+          clean, responsive, and interactive web experiences, while
+          increasingly connecting those interfaces to real backend services.
         </p>
       </div>
     </section>
@@ -115,9 +115,9 @@ function MainService() {
           <h2 className="section__heading">Frontend Development</h2>
           <div className="section__body">
             <p>
-              Building responsive and interactive web interfaces that are
-              structured clearly, work across screen sizes, and provide a
-              smooth user experience.
+              Building responsive and interactive web interfaces with React,
+              Redux, and Tailwind CSS, structured clearly, working across
+              screen sizes, and connected to backend services where needed.
             </p>
           </div>
         </div>
@@ -182,9 +182,10 @@ function CurrentFocus() {
         <div className="section__body">
           <p>
             My current service offering is centered around frontend
-            development. I&apos;m continuously improving my skills while
-            building practical projects and looking for opportunities to
-            apply what I learn to real-world work.
+            development with React, with growing experience connecting that
+            work to backend services. I&apos;m continuously improving my
+            skills while building practical projects and looking for
+            opportunities to apply what I learn to real-world work.
           </p>
         </div>
       </div>

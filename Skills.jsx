@@ -100,15 +100,27 @@ function PrimaryFocus() {
 const CORE_SKILLS = [
   {
     number: "01",
-    name: "Next.js",
+    name: "JavaScript",
     description:
-      "Used to build React-based web applications with routing, server-side rendering, and a structured project setup.",
+      "Used to build interactive, dynamic behavior across web applications, from UI logic to working with APIs.",
   },
   {
     number: "02",
+    name: "React",
+    description:
+      "Used to build component-based user interfaces and manage structure and state in single-page applications.",
+  },
+  {
+    number: "03",
     name: "Java",
     description:
       "Used to strengthen programming fundamentals, problem-solving, and understanding of object-oriented programming.",
+  },
+  {
+    number: "04",
+    name: "Python",
+    description:
+      "Used for backend logic, scripting, and working with AI-oriented tools and APIs.",
   },
 ];
 
@@ -148,10 +160,11 @@ function AreaOfExpertise() {
           <h2 className="section__heading">Frontend Development</h2>
           <div className="section__body">
             <p>
-              My current strength is building web applications using Next.js,
-              while continuing to strengthen my programming fundamentals
-              through Java and improving my understanding of how modern web
-              applications are structured and built.
+              My current strength is building web applications with React,
+              Redux, and Tailwind CSS, while continuing to strengthen my
+              programming fundamentals through Java and Python and improving
+              my understanding of how modern web applications are structured
+              and built.
             </p>
           </div>
         </div>
@@ -171,8 +184,10 @@ function NextStep() {
           </h2>
           <div className="section__body">
             <p>
-              I&apos;m gradually expanding beyond frontend development with
-              the goal of becoming a capable full stack developer.
+              I&apos;m gradually expanding beyond frontend development,
+              picking up backend and AI-oriented tools like FastAPI and
+              Appwrite through hands-on projects, with the goal of becoming
+              a capable full stack developer.
             </p>
           </div>
         </div>
