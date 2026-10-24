@@ -185,7 +185,7 @@ function NextStep() {
           <div className="section__body">
             <p>
               I&apos;m gradually expanding beyond frontend development,
-              picking up backend and AI-oriented tools like FastAPI and
+              picking up backend and tools like FastAPI and
               Appwrite through hands-on projects, with the goal of becoming
               a capable full stack developer.
             </p>
