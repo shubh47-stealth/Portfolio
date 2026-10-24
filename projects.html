@@ -19,12 +19,12 @@
 
       <nav class="primary-nav" aria-label="Primary">
         <ul class="primary-nav__list">
-          <li><a class="primary-nav__link" href="index.html">Home</a></li>
-          <li><a class="primary-nav__link" href="about.html">About</a></li>
-          <li><a class="primary-nav__link" href="skills.html">Skills</a></li>
-          <li><a class="primary-nav__link is-active" href="projects.html" aria-current="page">Projects</a></li>
-          <li><a class="primary-nav__link" href="services.html">Services</a></li>
-          <li><a class="primary-nav__link" href="contact.html">Contact</a></li>
+          <li><a class="primary-nav__link" href="/">Home</a></li>
+          <li><a class="primary-nav__link" href="/about">About</a></li>
+          <li><a class="primary-nav__link" href="/skills">Skills</a></li>
+          <li><a class="primary-nav__link is-active" href="/projects" aria-current="page">Projects</a></li>
+          <li><a class="primary-nav__link" href="/services">Services</a></li>
+          <li><a class="primary-nav__link" href="/contact">Contact</a></li>
         </ul>
       </nav>
 
@@ -54,7 +54,7 @@
       <div class="container">
         <div class="projects-list">
 
-          <!-- Project 01 — Booklist -->
+          <!-- Project 01 — ProbeAI -->
           <article class="project-item">
             <span class="project-item__number">01</span>
             <div class="project-item__grid">
@@ -62,23 +62,26 @@
                 <div class="project-image-frame">
                   <div class="project-image-placeholder">
                     <span class="project-image-placeholder-icon" aria-hidden="true"></span>
-                    <span class="project-image-placeholder-text">Booklist preview</span>
+                    <span class="project-image-placeholder-text">ProbeAI preview</span>
                   </div>
                 </div>
               </div>
               <div class="project-item__content">
-                <h2 class="project-item__title">Booklist</h2>
+                <h2 class="project-item__title">ProbeAI</h2>
                 <p class="project-item__description">
-                  A simple book management web application where users can
-                  add and remove books, with the book data stored in the
-                  browser using localStorage.
+                  An adaptive AI technical interviewer that parses a resume,
+                  job description, and GitHub codebase to run multi-turn
+                  interviews and generate a diagnostic feedback report, using
+                  a hybrid retrieval pipeline to ground its questions.
                 </p>
-                <p class="project-item__tech">HTML · CSS · Vanilla JavaScript · localStorage</p>
+                <p class="project-item__tech">React · FastAPI · LangGraph · ChromaDB · Hybrid RAG</p>
                 <div class="project-item__links">
-                  <a class="project-link" href="#">
-                    View Project <span class="project-link__arrow">→</span>
-                  </a>
-                  <a class="project-link" href="https://github.com/shubh47-stealth/BookList.git">
+                  <a
+                    class="project-link"
+                    href="https://github.com/shubh47-stealth/Probe-AI-Interviewer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Source Code <span class="project-link__arrow">→</span>
                   </a>
                 </div>
@@ -86,7 +89,7 @@
             </div>
           </article>
 
-          <!-- Project 02 — Music Player -->
+          <!-- Project 02 — Blog Website -->
           <article class="project-item project-item--reverse">
             <span class="project-item__number">02</span>
             <div class="project-item__grid">
@@ -94,22 +97,34 @@
                 <div class="project-image-frame">
                   <div class="project-image-placeholder">
                     <span class="project-image-placeholder-icon" aria-hidden="true"></span>
-                    <span class="project-image-placeholder-text">Music Player preview</span>
+                    <span class="project-image-placeholder-text">Blog Website preview</span>
                   </div>
                 </div>
               </div>
               <div class="project-item__content">
-                <h2 class="project-item__title">Music Player</h2>
+                <h2 class="project-item__title">Blog Website</h2>
                 <p class="project-item__description">
-                  A simple music player that allows users to play pre-stored
-                  songs and skip between tracks.
+                  A full-stack blog platform where users can sign up, log in,
+                  and create, edit, and delete posts, with authentication and
+                  post storage handled through Appwrite and global state
+                  managed with Redux.
                 </p>
-                <p class="project-item__tech">HTML · CSS · Vanilla JavaScript</p>
+                <p class="project-item__tech">React · Redux · Tailwind CSS · Appwrite</p>
                 <div class="project-item__links">
-                  <a class="project-link" href="#">
+                  <a
+                    class="project-link"
+                    href="https://blog-post-seven-flax.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     View Project <span class="project-link__arrow">→</span>
                   </a>
-                  <a class="project-link" href="https://github.com/shubh47-stealth/Music-PLayer.git">
+                  <a
+                    class="project-link"
+                    href="https://github.com/shubh47-stealth/BlogPost"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Source Code <span class="project-link__arrow">→</span>
                   </a>
                 </div>

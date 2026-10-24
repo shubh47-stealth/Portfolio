@@ -24,26 +24,26 @@ const NAV_LINKS = [
 const PROJECTS = [
   {
     number: "01",
-    title: "Booklist",
+    title: "ProbeAI",
     description:
-      "A simple book management web application where users can add and remove books, with the book data stored in the browser using localStorage.",
-    technologies: "HTML · CSS · Vanilla JavaScript · localStorage",
+      "An adaptive AI technical interviewer that parses a resume, job description, and GitHub codebase to run multi-turn interviews and generate a diagnostic feedback report, using a hybrid retrieval pipeline to ground its questions.",
+    technologies: "React · FastAPI · LangGraph · ChromaDB · Hybrid RAG",
     image: null, // replace with a screenshot path when available
-    imageAlt: "Booklist preview",
-    demoUrl: "#",
-    sourceUrl: "#",
+    imageAlt: "ProbeAI preview",
+    demoUrl: null,
+    sourceUrl: "https://github.com/shubh47-stealth/Probe-AI-Interviewer",
     reverse: false,
   },
   {
     number: "02",
-    title: "Music Player",
+    title: "Blog Website",
     description:
-      "A simple music player that allows users to play pre-stored songs and skip between tracks.",
-    technologies: "HTML · CSS · Vanilla JavaScript",
+      "A full-stack blog platform where users can sign up, log in, and create, edit, and delete posts, with authentication and post storage handled through Appwrite and global state managed with Redux.",
+    technologies: "React · Redux · Tailwind CSS · Appwrite",
     image: null,
-    imageAlt: "Music Player preview",
-    demoUrl: "#",
-    sourceUrl: "#",
+    imageAlt: "Blog Website preview",
+    demoUrl: "https://blog-post-seven-flax.vercel.app/",
+    sourceUrl: "https://github.com/shubh47-stealth/BlogPost",
     reverse: true,
   },
 ];
@@ -119,7 +119,12 @@ function ProjectImage({ image, imageAlt }) {
 
 function ProjectLink({ href, children }) {
   return (
-    <a className="project-link" href={href}>
+    <a
+      className="project-link"
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       {children} <span className="project-link__arrow">→</span>
     </a>
   );
@@ -148,8 +153,8 @@ function ProjectItem({
           <p className="project-item__description">{description}</p>
           <p className="project-item__tech">{technologies}</p>
           <div className="project-item__links">
-            <ProjectLink href={demoUrl}>View Project</ProjectLink>
-            <ProjectLink href={sourceUrl}>Source Code</ProjectLink>
+            {demoUrl && <ProjectLink href={demoUrl}>View Project</ProjectLink>}
+            {sourceUrl && <ProjectLink href={sourceUrl}>Source Code</ProjectLink>}
           </div>
         </div>
       </div>
